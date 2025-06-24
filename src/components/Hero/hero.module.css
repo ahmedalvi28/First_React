@@ -7,8 +7,32 @@
   color: #00000099;
 }
 
-.heroimgwrap {
+.heroimgdiv {
   position: relative;
+}
+
+.heroimgdiv::after {
+  position: absolute;
+  content: "";
+  background-image: url("../../../public/images/banner-b-star.png");
+  width: 70px;
+  height: 70px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 20px;
+  right: 20px;
+}
+
+.heroimgdiv::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../../public/images/banner-b-star.png");
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 100px;
+  left: 20px;
 }
 
 .herostatsdiv {
@@ -34,12 +58,10 @@
   margin-top: 12px;
 }
 
-.bannerlogowrap img{
+.bannerlogowrap img {
   max-width: 100px;
   max-height: 26px;
 }
-
-
 
 @media screen and (min-width: 440px) {
   .herostatsdiv:nth-child(2):before {
@@ -54,6 +76,22 @@
 
   .herostatsdiv:last-child {
     margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .heroimgdiv::after {
+    width: 70px;
+    height: 70px;
+    top: 60px;
+    right: 70px;
+  }
+
+  .heroimgdiv::before {
+    width: 40px;
+    height: 40px;
+    top: 220px;
+    left: 63px;
   }
 }
 
@@ -74,10 +112,24 @@
     padding: 0px 0px 0px 26px;
   }
 
-  .bannerlogowrap img{
-  max-width: 185px;
-  max-height: 26px;
-}
+  .bannerlogowrap img {
+    max-width: 185px;
+    max-height: 26px;
+  }
+
+   .heroimgdiv::after {
+    width: 70px;
+    height: 70px;
+    top: 60px;
+    right: 25px;
+  }
+
+  .heroimgdiv::before {
+    width: 40px;
+    height: 40px;
+    top: 210px;
+    left: 30px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -89,8 +141,55 @@
     font-size: 16px;
   }
 
-    .bannerlogowrap img{
-  max-width: 185px;
-  max-height: 34px;
+  .bannerlogowrap img {
+    max-width: 185px;
+    max-height: 34px;
+  }
+
+    .heroimgdiv::after {
+    width: 104px;
+    height: 104px;
+    top: 60px;
+    right: -20px;
+  }
+
+  .heroimgdiv::before {
+    width: 56px;
+    height: 56px;
+    top: 256px;
+    left: 5px;
+  }
 }
+
+@media screen and (min-width: 1536px) {
+  .herocontent p {
+    max-width: 560px;
+  }
+
+    .herostatsdiv {
+    padding: 0px 32px 0px 32px;
+  }
+
+  .herostatsdiv:first-child {
+    padding: 0px 32px 0px 0px;
+  }
+
+  .herostatsdiv:last-child {
+    padding: 0px 0px 0px 32px;
+  }
+
+   .heroimgdiv::after {
+    width: 104px;
+    height: 104px;
+    top: 106px;
+    right: -20px;
+  }
+
+  .heroimgdiv::before {
+    width: 56px;
+    height: 56px;
+    top: 346px;
+    left: -22px;
+  }
+
 }

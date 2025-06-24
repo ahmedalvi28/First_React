@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div>
       <section className={`${styles.herobg}`}>
-        <div className="custom-container lg:flex items-center gap-x-4 lg:px-[5%] md:px-[3%] ">
+        <div className="custom-container lg:flex items-center gap-x-4 xl:gap-x-12 2xl:gap-x-0 lg:px-[5%] md:px-[3%] ">
           <div className={`w-full lg:w-6/12 py-7 px-[7%] md:px-0  ${styles.herocontent}`}>
             <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
             <p>
@@ -18,21 +18,21 @@ export default function Hero() {
             </div>
             <div className="flex flex-wrap justify-center lg:justify-normal items-center">
               <div className={`flex flex-col ${styles.herostatsdiv}`}>
-                <span className="font-bold text-2xl xl:text-4xl">200+</span>
+                <span className="font-bold text-[24px] leading-[28px] xl:text-[32px] xl:leading-[36px] 2xl:text-[40px] 2xl:leading-[44px]">200+</span>
                 <span className={`${styles.herocompanyno}`}>
                   International Brands
                 </span>
               </div>
 
               <div className={`flex flex-col ${styles.herostatsdiv}`}>
-                <span className="font-bold text-2xl xl:text-4xl">2,000+</span>
+                <span className="font-bold text-[24px] leading-[28px] xl:text-[32px] xl:leading-[36px] 2xl:text-[40px] 2xl:leading-[44px]">2,000+</span>
                 <span className={`${styles.herocompanyno}`}>
                   High-Quality Products
                 </span>
               </div>
 
               <div className={`flex flex-col ${styles.herostatsdiv}`}>
-                <span className="font-bold text-2xl xl:text-4xl">30,000+</span>
+                <span className="font-bold text-[24px] leading-[28px] xl:text-[32px] xl:leading-[36px] 2xl:text-[40px] 2xl:leading-[44px]">30,000+</span>
                 <span className={`${styles.herocompanyno}`}>
                   Happy Customers
                 </span>
@@ -41,7 +41,9 @@ export default function Hero() {
           </div>
 
           <div className="w-full lg:w-6/12">
+          <div className={`${styles.heroimgdiv}`}>
             <img src="images/hero-img2.png" alt="Hero Image" />
+            </div>
           </div>
         </div>
         <div className="bg-black py-3 lg:py-6 ">

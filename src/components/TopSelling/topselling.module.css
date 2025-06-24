@@ -1,0 +1,8 @@
+.discount{
+    padding: 6px 13px;
+    background-color: var(--blur-red-color);
+    color: var(--red-color);
+    border-radius: 62px;
+    font-size: 12px;  
+    font-weight: 500;
+}

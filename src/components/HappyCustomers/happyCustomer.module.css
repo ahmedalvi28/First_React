@@ -1,0 +1,16 @@
+.happycustomersection{
+    overflow: hidden !important;
+}
+
+
+.happycustomersection h2{
+    max-width: 175px;
+}
+
+@media screen and (min-width: 640px) {
+    .happycustomersection h2{
+    max-width: unset;
+}
+    
+}
+

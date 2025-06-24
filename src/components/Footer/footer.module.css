@@ -1,0 +1,127 @@
+/* .footersection{
+    background-color: aqua;
+} */
+
+.footerlogo img {
+  max-width: fit-content;
+  margin-bottom: 16px;
+}
+
+.socialicons {
+  margin-top: 20px;
+}
+
+.socialicons a {
+  padding: 10px;
+  border-radius: 25px;
+  background-color: white;
+  border: 1px solid #00000033;
+}
+
+.socialicons a:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.socialicons a:hover svg {
+  fill: white;
+}
+
+.socialicons a svg path {
+  height: 12px !important;
+  width: 12px !important;
+}
+
+.footersection p {
+  font-size: 14px;
+  color: #00000099;
+}
+
+.footerlinks span {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 18px;
+  margin: 16px 0px;
+  display: inline-block;
+}
+
+.footerlinks ul li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 16px;
+  color: #00000099;
+}
+
+.footerlinks ul li:hover {
+  color: black;
+}
+
+.footersection button {
+  font-weight: 700;
+}
+.footersection input {
+  position: relative;
+}
+
+/* .footersection input::after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+   background-image: url('../../../public/images/email-icon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+} */
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+  .footerlogo {
+    max-width: 235px;
+  }
+
+  .footersection p {
+    font-size: 14px;
+  }
+
+  .footerlinks span {
+    margin-top: 0px;
+    margin-bottom: 26px;
+  }
+
+  .footerlinks ul li {
+    margin-bottom: 20px;
+  }
+
+  .footerlogo img {
+    margin-bottom: 25px;
+  }
+
+  .socialicons {
+    margin-top: 35px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footersection p {
+    font-size: 14px;
+  }
+
+  .footerlinks span {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .footerlinks ul li {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+

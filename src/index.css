@@ -25,11 +25,11 @@ video {
   height: auto;
 }
 
-:root{
+:root {
   --primary-color: #000000;
   --secondary-color: #ffffff;
-  --red-color: #FF3333;
-  --blur-red-color: #FF33331A;
+  --red-color: #ff3333;
+  --blur-red-color: #ff33331a;
 }
 
 h1 {
@@ -39,20 +39,24 @@ h1 {
   padding-bottom: 20px;
 }
 
-h2{
+h2 {
   font-size: 32px;
   font-weight: 700;
-  padding-bottom: 32px;
-  text-align: center;
+  line-height: 40px;
+  margin-bottom: 32px;
+  /* text-align: center; */
 }
 
-h3{
-font-weight: 700;
-font-size: 20px;  
+h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
 }
 
-h4{
-
+h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .blackbtn {
@@ -74,43 +78,162 @@ h4{
   color: white;
 }
 
-.custom-container{
+.secondarybtn {
+  background-color: transparent;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 62px;
+  margin: 20px 0px;
+  cursor: pointer;
+  transition: background-color 0.6s ease;
+  border: 1px solid black;
+}
+
+.secondarybtn:hover {
+  border:1px solid #00000099;
+  background-color: #00000099;
+}
+
+.secondarybtn:hover a {
+  color: rgb(0, 0, 0);
+}
+
+.secondarybtn a {
+  color: rgb(0, 0, 0);
+}
+
+.custom-container {
   width: 100%;
   margin: 0 auto;
 }
 
-.spacing{
+.spacing {
   padding: 30px 0px;
 }
 
-@media screen and (min-width: 640px) {
- .custom-container{
-  max-width: 640px;
+ .last-spacing {
+    padding: 30px 0px 184px;
+  }
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: #000000 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
+
+.slick-next{
+  position: absolute !important;
+    top: -20% !important;
+    right: 0px !important;
+}
+
+.slick-prev{
+  position: absolute !important;
+    top: -20% !important;
+    left: unset !important;
+    right: 40px !important;
+}
+
+
+
+.happycustomersection{
+  overflow: hidden;
+}
+
+.slick-slide{
+  opacity: 0.4 !important;
+}
+
+.slick-slide.slick-active{
+  opacity: 1 !important;
+}
+
+.slick-next:before {
+    content: '' !important;
+    background-image: url('/public/images/arrow-right.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    width: 20px !important;
+    height: 20px !important;
+    display: inline-block;
+
+}
+
+.slick-prev:before {
+    content: '' !important;
+    background-image: url('/public/images/arrow-prev.png') !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    width: 20px !important;
+    height: 20px !important;
+    display: inline-block;
+
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar {
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: black transparent; /* For Firefox */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px; /* Adjust thickness */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+}
+
+
+
+@media screen and (min-width: 640px) {
+  .custom-container {
+    max-width: 640px;
+  }
 }
 
 @media screen and (min-width: 768px) {
- .custom-container{
-  max-width: 768px;
-}
+  .custom-container {
+    max-width: 768px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-
-.custom-container{
-  max-width: 1024px;
-}
+  .custom-container {
+    max-width: 1024px;
+  }
 
   .blackbtn {
     max-width: 210px;
     margin: 30px 0px 50px 0px;
   }
+
+  .secondarybtn {
+    max-width: 210px;
+    margin: 0 auto;
+  }
+
+  .slick-list {
+  overflow: visible !important;
+  
+}
 }
 
 @media screen and (min-width: 1280px) {
-.custom-container{
-  max-width: 1280px;
-}
+  .custom-container {
+    max-width: 1280px;
+  }
 
   body {
     font-size: 16px;
@@ -122,25 +245,41 @@ h4{
     line-height: 64px;
   }
 
+  h2 {
+    font-size: 48px;
+    line-height: 55px;
+    margin-bottom: 55px;
+  }
 
-  h2{
-  font-size: 48px;
-  padding-bottom: 55px;
+  h3 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .spacing {
+    padding: 65px 0px;
+  }
+
+  .last-spacing {
+    padding: 65px 0px 190px;
+  }
+
+  .slick-next{
+    top: -30% !important;
 }
 
-h3{
-font-size: 24px;  
-
-}
-
-  .spacing{
-  padding: 65px 0px;
+.slick-prev{
+    top: -30% !important;
 }
 }
-
 
 @media screen and (min-width: 1536px) {
-.custom-container{
-  max-width: 1536px;
-}
+  .custom-container {
+    max-width: 1536px;
+  }
 }
