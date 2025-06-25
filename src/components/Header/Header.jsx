@@ -38,7 +38,7 @@ export default function Header() {
         <div className="custom-container px-[7%] lg:px-[5%] md:px-[3%] flex justify-between  items-center">
           <div className="flex items-center justify-between gap-x-4 lg:gap-x-[40px] xl:gap-x-[46px] 2xl:gap-x-[70px]">
             <div className="order-2 lg:order-1">
-              <img src="images/SHOP-CO.png" alt="" />
+           <a href="/"> <img src="images/SHOP-CO.png" alt="" /></a>  
             </div>
             <div className="order-1 lg:order-2">
               <div className="menu-toggle-btn lg:hidden">

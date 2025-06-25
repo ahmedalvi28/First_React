@@ -171,6 +171,9 @@
 //   );
 // }
 
+
+import styles from "./product.module.css";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -192,9 +195,9 @@ function Product() {
   }, []);
 
   return (
-    <section className="spacing">
+    <section className={`${styles.newarrival} spacing`}>
       <div className="custom-container lg:px-[5%] md:px-[3%] px-[7%]">
-        <h2 className='text-center'>NEW ARRIVALS</h2>
+        <h2 className="text-center">NEW ARRIVALS</h2>
         <div class="flex gap-4 overflow-x-auto custom-scrollbar">
           {state.map((item, index) => (
             <div
@@ -255,9 +258,9 @@ function Product() {
           ))}
         </div>
         <div className="mt-6 lg:mt-10">
-          <div className="secondarybtn">
-            <a href="">View All</a>
-          </div>
+          
+            <Link className="secondarybtn"  to="/TopSelling">View All</Link>
+          
         </div>
       </div>
     </section>

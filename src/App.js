@@ -1,5 +1,6 @@
 import "./App.css";
 import React from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./index.css";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -11,15 +12,33 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <Hero />
-      <Product />
-      <TopSelling />
-      <DressStyle />
-      <HappyCustomer />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Product />
+              <TopSelling />
+              <DressStyle />
+              <HappyCustomer />
+            </>
+          }
+        />
+
+        <Route
+          path="/TopSelling"
+          element={
+            <>
+              <TopSelling />
+            </>
+          }
+        />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 

@@ -29,7 +29,7 @@ const HappyCustomer = () => {
   };
 
   return (
-    <section className={`${styles.happycustomersection} last-spacing`}>
+    <section className={`${styles.happycustomersection} spacing`}>
       <div className="custom-container lg:px-[5%] md:px-[3%] px-[7%]">
         <h2>Our Happy Customer</h2>
         <div className="no-scrollbar">
@@ -39,7 +39,7 @@ const HappyCustomer = () => {
                 key={index}
                 className=" justify-center px-2" // fixes layout inside slide
               >
-                <div className="min-w-[260px] max-w-[600px] rounded-[20px] p-6 lg:py-[28px] lg:px-[32px] border-2 border-gray-300">
+                <div className="min-w-[260px] max-w-[750px] rounded-[20px] p-6 lg:py-[28px] lg:px-[32px] border-2 border-gray-300">
                   <div className="flex items-center max-w-[fit-content] pb-3">
                     {[...Array(5)].map((_, i) => (
                       <img key={i} src="images/star.png" alt="" />

@@ -60,9 +60,9 @@ export default function Footer() {
   return (
     <div>
       <section
-        className={`${styles.footersection} footersection bg-[#F5F5F5] relative`}
+        className={`${styles.footersection} footersectionspace bg-[#F5F5F5] relative`}
       >
-        <div className="bg-black lg:items-center py-8 px-6 xl:py-[43px] xl:px-[64px] lg:flex lg:justify-between  absolute left-1/2 top-[-16%] lg:top-[-17%] xl:top-[-20%] transform -translate-x-1/2 rounded-[20px] sm:text-center lg:text-start w-[90%] md:w-[715px] lg:w-[917px] xl:w-[1146px] 2xl:w-[1366px] ">
+        <div className="bg-black lg:items-center py-8 px-6 xl:py-[43px] xl:px-[64px] lg:flex lg:justify-between  absolute left-1/2 top-[-20%] sm:top-[-15%] lg:top-[-17%] xl:top-[-20%] transform -translate-x-1/2 rounded-[20px] sm:text-center lg:text-start w-[90%] md:w-[715px] lg:w-[917px] xl:w-[1146px] 2xl:w-[1366px] ">
           <h2 className="text-white lg:mb-0  lg:w-[560px] xl:w-[660px] ">
             STAY UPTO DATE ABOUT OUR LATEST OFFERS
           </h2>
@@ -84,7 +84,7 @@ export default function Footer() {
 
               <button
                 type="submit"
-                className="bg-white text-black py-4 transition rounded-[62px]"
+                className="bg-white text-black py-4 transition rounded-[62px] hover:bg-gray-300 "
               >
                 Subscribe to Newsletter
               </button>

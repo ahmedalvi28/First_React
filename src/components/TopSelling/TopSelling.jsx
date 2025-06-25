@@ -84,9 +84,9 @@ function TopSelling() {
           ))}
         </div>
         <div className="mt-6 lg:mt-10">
-          <div className="secondarybtn">
-            <a href="">View All</a>
-          </div>
+         
+            <a className="secondarybtn" href="">View All</a>
+        
         </div>
       </div>
     </section>
